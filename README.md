@@ -12,16 +12,7 @@ FreightLens turns shipment-level freight data and operational context notes into
 
 ## Architecture
 
-```text
-shipment_records.csv ──> loader ──> weekly metrics ──> anomaly detector ──┐
-                                                                         ├─> output + audit logs
-context_notes.csv ──> note cards ──> TF-IDF retrieval ──> evidence gate ─┘
-                                                                  │
-                                                        deterministic reasons
-
-findings + question ──> local Q&A (default) / optional Groq phrasing (--groq)
-```
-
+![FreightWatch Architecture Diagram](architecture_diagram.svg)
 The package is split by responsibility: `loader.py` validates inputs, `metrics.py` computes weekly values and baselines, `detector.py` identifies candidates, `retrieval.py` ranks notes, `verdict.py` applies evidence rules, `explain.py` writes reasons, and `wrapper.py` keeps the batch decision path deterministic. `ask.py` reads the finished findings and cannot alter the batch output.
 
 ## Calculation rules
