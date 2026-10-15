@@ -1,0 +1,162 @@
+{
+  "golden_cases": 17,
+  "golden_passed": 17,
+  "spot_check_justified_rows": 3,
+  "spot_check_problems": [],
+  "all_passed": true,
+  "cases": [
+    {
+      "case_id": "G01",
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-11",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "Official sample row. Only note on this route is N007 (improved roads) dated 6 months earlier; no note supports a rise."
+    },
+    {
+      "case_id": "G02",
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-18",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "Same spike continuing; still no applicable note."
+    },
+    {
+      "case_id": "G03",
+      "route": "Ahmedabad-Mumbai",
+      "week_of": "2025-01-20",
+      "expected": "No (justified) N002",
+      "got": "No (justified) N002",
+      "passed": true,
+      "why": "Official sample row. N002 is route-specific and its festival-week surcharge covers this Monday-Sunday week."
+    },
+    {
+      "case_id": "G04",
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-02-24",
+      "expected": "No (justified) N001",
+      "got": "No (justified) N001",
+      "passed": true,
+      "why": "Inside N001's stated flood window (Feb 24 to Mar 8) on the named route."
+    },
+    {
+      "case_id": "G05",
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-03",
+      "expected": "No (justified) N001",
+      "got": "No (justified) N001",
+      "passed": true,
+      "why": "Week of Mar 3-9 overlaps the flood window (Mar 3-8)."
+    },
+    {
+      "case_id": "G06",
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-10",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "Week starts after N001's window ended (Mar 8) and N009 says roads were back to normal; cost still high so unexplained."
+    },
+    {
+      "case_id": "G07",
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-17",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "N009 says conditions returned to normal and N001 expired; cost still high."
+    },
+    {
+      "case_id": "G08",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-09-15",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "Official sample row. Closest note N006 says demand stable with no disruptions - not a reason for a rise."
+    },
+    {
+      "case_id": "G09",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-06-23",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "N003 (diesel +5-7%) hit ALL routes 7 weeks earlier so it cannot explain a +20.6% gap versus peers."
+    },
+    {
+      "case_id": "G10",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-27",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "N010 says costs were absorbed without a rate change - explicitly not a cause."
+    },
+    {
+      "case_id": "G11",
+      "route": "Mumbai-Delhi",
+      "week_of": "2025-05-12",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "N003 cites roughly 5-7% but this week is +11.6% vs history: the note explains only part of the rise."
+    },
+    {
+      "case_id": "G12",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-22",
+      "expected": "Yes",
+      "got": "Yes",
+      "passed": true,
+      "why": "Late-year creep: no note within weeks of this date."
+    },
+    {
+      "case_id": "G13",
+      "route": "Mumbai-Delhi",
+      "week_of": "2024-07-29",
+      "expected": "not emitted",
+      "got": "not emitted",
+      "passed": true,
+      "why": "N005 says costs not significantly affected; cost is normal that week so nothing should be emitted."
+    },
+    {
+      "case_id": "G14",
+      "route": "Kolkata-Bhubaneswar",
+      "week_of": "2025-06-09",
+      "expected": "not emitted",
+      "got": "not emitted",
+      "passed": true,
+      "why": "N008 reports normal conditions; cost normal so nothing should be emitted."
+    },
+    {
+      "case_id": "G15",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-10",
+      "expected": "not emitted",
+      "got": "not emitted",
+      "passed": true,
+      "why": "+21.4% vs peers but -0.1% vs own history: dearer than peers but not rising, so not flagged (documented trade-off)."
+    },
+    {
+      "case_id": "G16",
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-05-20",
+      "expected": "not emitted",
+      "got": "not emitted",
+      "passed": true,
+      "why": "N007 says roads improved; there is no cost increase to explain so nothing should be emitted."
+    },
+    {
+      "case_id": "G17",
+      "route": "Mumbai-Delhi",
+      "week_of": "2025-05-05",
+      "expected": "not emitted",
+      "got": "not emitted",
+      "passed": true,
+      "why": "Diesel-rise week itself is only +7.3% vs history, below the 10% threshold."
+    }
+  ]
+}

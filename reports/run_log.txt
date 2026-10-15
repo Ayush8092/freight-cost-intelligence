@@ -1,0 +1,4 @@
+Shipments used: 2940/2940 (quarantined 0, duplicates removed 0)
+Route-weeks computed: 728
+Rows written: 20  (Yes: 17, No (justified): 3)
+Output: /mnt/data/freightlens_work/Project__1/freightlens/outputs/output.csv  | LLM calls: 0, tokens: 0

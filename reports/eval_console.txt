@@ -1,0 +1,20 @@
+[PASS] G01 Delhi-Jaipur 2024-11-11: expected 'Yes', got 'Yes'
+[PASS] G02 Delhi-Jaipur 2024-11-18: expected 'Yes', got 'Yes'
+[PASS] G03 Ahmedabad-Mumbai 2025-01-20: expected 'No (justified) N002', got 'No (justified) N002'
+[PASS] G04 Chennai-Bangalore 2025-02-24: expected 'No (justified) N001', got 'No (justified) N001'
+[PASS] G05 Chennai-Bangalore 2025-03-03: expected 'No (justified) N001', got 'No (justified) N001'
+[PASS] G06 Chennai-Bangalore 2025-03-10: expected 'Yes', got 'Yes'
+[PASS] G07 Chennai-Bangalore 2025-03-17: expected 'Yes', got 'Yes'
+[PASS] G08 Mumbai-Pune 2025-09-15: expected 'Yes', got 'Yes'
+[PASS] G09 Mumbai-Pune 2025-06-23: expected 'Yes', got 'Yes'
+[PASS] G10 Mumbai-Pune 2025-10-27: expected 'Yes', got 'Yes'
+[PASS] G11 Mumbai-Delhi 2025-05-12: expected 'Yes', got 'Yes'
+[PASS] G12 Mumbai-Pune 2025-12-22: expected 'Yes', got 'Yes'
+[PASS] G13 Mumbai-Delhi 2024-07-29: expected 'not emitted', got 'not emitted'
+[PASS] G14 Kolkata-Bhubaneswar 2025-06-09: expected 'not emitted', got 'not emitted'
+[PASS] G15 Mumbai-Pune 2025-11-10: expected 'not emitted', got 'not emitted'
+[PASS] G16 Delhi-Jaipur 2024-05-20: expected 'not emitted', got 'not emitted'
+[PASS] G17 Mumbai-Delhi 2025-05-05: expected 'not emitted', got 'not emitted'
+
+Golden set: 17/17 passed
+Spot-check of 3 justified rows: no problems

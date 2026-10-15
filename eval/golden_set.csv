@@ -1,0 +1,18 @@
+case_id,route,week_of,expect_in_output,expect_flagged,expect_note_id,why
+G01,Delhi-Jaipur,2024-11-11,Y,Yes,,Official sample row. Only note on this route is N007 (improved roads) dated 6 months earlier; no note supports a rise.
+G02,Delhi-Jaipur,2024-11-18,Y,Yes,,Same spike continuing; still no applicable note.
+G03,Ahmedabad-Mumbai,2025-01-20,Y,No (justified),N002,Official sample row. N002 is route-specific and its festival-week surcharge covers this Monday-Sunday week.
+G04,Chennai-Bangalore,2025-02-24,Y,No (justified),N001,Inside N001's stated flood window (Feb 24 to Mar 8) on the named route.
+G05,Chennai-Bangalore,2025-03-03,Y,No (justified),N001,Week of Mar 3-9 overlaps the flood window (Mar 3-8).
+G06,Chennai-Bangalore,2025-03-10,Y,Yes,,Week starts after N001's window ended (Mar 8) and N009 says roads were back to normal; cost still high so unexplained.
+G07,Chennai-Bangalore,2025-03-17,Y,Yes,,N009 says conditions returned to normal and N001 expired; cost still high.
+G08,Mumbai-Pune,2025-09-15,Y,Yes,,Official sample row. Closest note N006 says demand stable with no disruptions - not a reason for a rise.
+G09,Mumbai-Pune,2025-06-23,Y,Yes,,N003 (diesel +5-7%) hit ALL routes 7 weeks earlier so it cannot explain a +20.6% gap versus peers.
+G10,Mumbai-Pune,2025-10-27,Y,Yes,,N010 says costs were absorbed without a rate change - explicitly not a cause.
+G11,Mumbai-Delhi,2025-05-12,Y,Yes,,N003 cites roughly 5-7% but this week is +11.6% vs history: the note explains only part of the rise.
+G12,Mumbai-Pune,2025-12-22,Y,Yes,,Late-year creep: no note within weeks of this date.
+G13,Mumbai-Delhi,2024-07-29,N,,,N005 says costs not significantly affected; cost is normal that week so nothing should be emitted.
+G14,Kolkata-Bhubaneswar,2025-06-09,N,,,N008 reports normal conditions; cost normal so nothing should be emitted.
+G15,Mumbai-Pune,2025-11-10,N,,,"+21.4% vs peers but -0.1% vs own history: dearer than peers but not rising, so not flagged (documented trade-off)."
+G16,Delhi-Jaipur,2024-05-20,N,,,N007 says roads improved; there is no cost increase to explain so nothing should be emitted.
+G17,Mumbai-Delhi,2025-05-05,N,,,"Diesel-rise week itself is only +7.3% vs history, below the 10% threshold."

@@ -1,0 +1,14 @@
+{
+  "model": "none (deterministic templates)",
+  "llm_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost_usd": 0.0,
+  "token_source": "provider usage metadata (none: no provider was called)",
+  "run_scope": {
+    "shipment_rows": 2940,
+    "route_weeks_computed": 728,
+    "candidate_route_weeks_explained": 20
+  },
+  "note": "The core pipeline uses local TF-IDF retrieval and rule-based validation; reasons are templated from validated facts. No model generated any text, so no tokens were produced or billed. Local CPU time and one-time package installs are not counted."
+}

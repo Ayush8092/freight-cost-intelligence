@@ -1,0 +1,35 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "sha256": {
+        "output.csv": "de8a27c14ffe457afba95279c57f69f38ab567a65a312fb94cf9f20310083061",
+        "weekly_metrics_debug.csv": "b00c0efbbce246875f2c4fc410e39a905ba9405fd0756e28dd519238f6017a47",
+        "token_cost_log.json": "2a20583ae6fe028ea11c1b8271e6bf096580478e1cd97a900784864b6796d23b"
+      }
+    },
+    {
+      "run": 2,
+      "sha256": {
+        "output.csv": "de8a27c14ffe457afba95279c57f69f38ab567a65a312fb94cf9f20310083061",
+        "weekly_metrics_debug.csv": "b00c0efbbce246875f2c4fc410e39a905ba9405fd0756e28dd519238f6017a47",
+        "token_cost_log.json": "2a20583ae6fe028ea11c1b8271e6bf096580478e1cd97a900784864b6796d23b"
+      }
+    },
+    {
+      "run": 3,
+      "sha256": {
+        "output.csv": "de8a27c14ffe457afba95279c57f69f38ab567a65a312fb94cf9f20310083061",
+        "weekly_metrics_debug.csv": "b00c0efbbce246875f2c4fc410e39a905ba9405fd0756e28dd519238f6017a47",
+        "token_cost_log.json": "2a20583ae6fe028ea11c1b8271e6bf096580478e1cd97a900784864b6796d23b"
+      }
+    }
+  ],
+  "identical_across_runs": true,
+  "files_compared": [
+    "output.csv",
+    "weekly_metrics_debug.csv",
+    "token_cost_log.json"
+  ],
+  "method": "each run is a fresh Python process; files compared by SHA-256 (byte-identical)"
+}
