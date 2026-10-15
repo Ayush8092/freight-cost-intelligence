@@ -11,8 +11,9 @@ FreightLens turns shipment-level freight data and operational context notes into
 - `reports/eval_report.json` — results from the labelled evaluation set.
 
 ## Architecture
-
-<img src="https://github.com/Ayush8092/freight-cost-intelligence/blob/main/architecture_diagram.svg" width="600" alt="FreightWatch Architecture Diagram">
+<p align="center">
+  <img src="https://github.com/Ayush8092/freight-cost-intelligence/blob/main/architecture_diagram.svg" width="600" alt="FreightWatch Architecture Diagram">
+</p>
 
 
 The package is split by responsibility: `loader.py` validates inputs, `metrics.py` computes weekly values and baselines, `detector.py` identifies candidates, `retrieval.py` ranks notes, `verdict.py` applies evidence rules, `explain.py` writes reasons, and `wrapper.py` keeps the batch decision path deterministic. `ask.py` reads the finished findings and cannot alter the batch output.
